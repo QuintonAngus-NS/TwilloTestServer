@@ -8,8 +8,8 @@ app.use(express.json());
 
 // Replace these with your real Twilio values
 const client = twilio(
-  "AC727fdcac38bc4019a146e1e1ae541e1b",
-  "567b96fce0717ef0bc6bb5b01a66ae0a"
+  process.env.SID,
+  process.env.SECRET
 );
 
 app.post("/send-test", async (req, res) => {
