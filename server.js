@@ -27,7 +27,7 @@ app.post("/send-test", async (req, res) => {
   }
 });
 
-const PORT = proccess.env.PORT
+const PORT = process.env.PORT
 
 app.listen(PORT, () => {
   console.log(`Backend running on ${PORT}`);
